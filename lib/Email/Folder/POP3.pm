@@ -80,6 +80,12 @@ L<Email::FolderType::Net>,
 L<URI::pop>,
 L<Net::POP3>.
 
+=head1 PERL EMAIL PROJECT
+
+This module is maintained by the Perl Email Project.
+
+  http://emailproject.perl.org/wiki/Email::Folder::POP3
+
 =head1 AUTHOR
 
 GomoR, <F<netpkt@gomor.org>>.
