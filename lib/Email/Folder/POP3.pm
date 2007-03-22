@@ -2,7 +2,7 @@ package Email::Folder::POP3;
 use strict;
 
 use vars qw[$VERSION $POP3];
-$VERSION   = '1.011';
+$VERSION   = '1.012';
 $POP3    ||= 'Net::POP3';
 
 use base qw[Email::Folder::Reader];
