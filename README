@@ -1,0 +1,33 @@
+NAME
+    Email::Folder::POP3 - Email::Folder Access to POP3 Folders
+
+SYNOPSIS
+      use Email::Folder;
+      use Email::FolderType::Net;
+  
+      my $folder = Email::Folder->new('pop://user:pass@example.com:110/');
+  
+      print $_->header('Subject') for $folder->messages;
+
+DESCRIPTION
+    This software adds POP3 functionality to Email::Folder. Its interface is
+    identical to the other Email::Folder::Reader subclasses.
+
+  Parameters
+    "username" and "password" parameters may be sent to "new()". If used,
+    they override any user info passed in the connection URI.
+
+SEE ALSO
+    Email::Folder, Email::Folder::Reader, Email::FolderType::Net, URI::pop,
+    Net::POP3.
+
+AUTHOR
+    GomoR, <netpkt@gomor.org>.
+
+    Casey West, <casey@geeknest.com> (Maintainer).
+
+COPYRIGHT
+      Copyright (c) 2004 GomoR.  All rights reserved.
+      This module is free software; you can redistribute it and/or modify it
+      under the same terms as Perl itself.
+
