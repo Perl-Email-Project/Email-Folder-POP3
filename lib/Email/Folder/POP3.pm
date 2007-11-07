@@ -2,7 +2,7 @@ package Email::Folder::POP3;
 use strict;
 
 use vars qw[$VERSION $POP3];
-$VERSION   = '1.012';
+$VERSION   = '1.013';
 $POP3    ||= 'Net::POP3';
 
 use base qw[Email::Folder::Reader];
@@ -57,7 +57,7 @@ Email::Folder::POP3 - Email::Folder Access to POP3 Folders
   use Email::Folder;
   use Email::FolderType::Net;
   
-  my $folder = Email::Folder->new('pop://user:pass@example.com:110/');
+  my $folder = Email::Folder->new('pop://user:pass@example.com:110');
   
   print $_->header('Subject') for $folder->messages;
 
@@ -88,9 +88,11 @@ This module is maintained by the Perl Email Project.
 
 =head1 AUTHOR
 
-GomoR, <F<netpkt@gomor.org>>.
+Ricardo SIGNES, <F<rjbs@cpan.org>> (current maintainer).
 
-Casey West, <F<casey@geeknest.com>> (Maintainer).
+Casey West, <F<casey@geeknest.com>> (previous maintainer)
+
+GomoR, <F<netpkt@gomor.org>> (original author)
 
 =head1 COPYRIGHT
 
