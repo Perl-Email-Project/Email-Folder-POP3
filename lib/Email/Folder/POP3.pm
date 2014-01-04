@@ -3,7 +3,6 @@ use warnings;
 package Email::Folder::POP3;
 # ABSTRACT: Email::Folder Access to POP3 Folders
 
-our $VERSION   = '1.013';
 our $POP3    ||= 'Net::POP3';
 
 use parent qw[Email::Folder::Reader];
